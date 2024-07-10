@@ -1,0 +1,13 @@
+<h1>Book App</h1>
+<div class="book-list">
+    <ul>
+        <li *ngFor="let book of allBook">
+          <div *ngIf ="book.id">
+            <p>{{book.title}}</p>
+            <p>{{book.author}}</p>
+            <button [routerLink]="['/Detail',book.id]">Detail</button>
+          </div>
+      </li>
+    </ul>
+</div>
+  
